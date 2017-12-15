@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.cevnyne.trackids.MainActivity">
+
+    <ImageView
+        android:id="@+id/satelit_id"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/satelit"
+        android:contentDescription="@string/image_satelit" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/satelit_id"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/lobster"
+        android:text="Trackids"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_centerInParent="true"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:text="You have signed in!"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/button_start_tracking"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/text2"
+        android:background="@color/colorSatelit"
+        android:text="@string/start_tracking"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
